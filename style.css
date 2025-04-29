@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    display: flex;
+    background: linear-gradient(120deg, #f0f4ff, #ffffff);
+    min-height: 100vh;
+    color: #1a1a2e;
+  }
+  
+  .dashboard {
+    display: flex;
+    width: 100%;
+  }
+  
+  .sidebar {
+    background: #7f5af0;
+    color: white;
+    padding: 2rem 1.5rem;
+    width: 250px;
+    position: fixed;
+    height: 100vh;
+  }
+  
+  .sidebar h2 {
+    margin-bottom: 2rem;
+    color: #00f0ff; /* Change this to any color you prefer */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+  }
+  
+  .sidebar ul {
+    list-style: none;
+  }
+  
+  .sidebar ul li {
+    margin: 1.2rem 0;
+  }
+  
+  .sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .sidebar ul li a:hover {
+    color: #00f0ff;
+  }
+  
+  .content {
+    margin-left: 260px;
+    padding: 2rem;
+    width: calc(100% - 260px);
+  }
+  
+  .card {
+    background: #ffffffdd;
+    border-left: 5px solid #7f5af0;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    animation: fadeInUp 0.8s ease;
+  }
+  
+  h2 {
+    color: #6246ea;
+    margin-bottom: 1rem;
+  }
+  
+  .project {
+    margin-bottom: 1.5rem;
+  }
+  
+  .project a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: #2cb67d;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .project a:hover {
+    text-decoration: underline;
+  }
+  
+  form input, form textarea {
+    display: block;
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  form button {
+    background-color: #7f5af0;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #6246ea;
+  }
+  
+  /* Animations */
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .fade-in {
+    animation: fadeInUp 0.8s ease;
+  }
+  
+  @media (max-width: 768px) {
+    .sidebar {
+      display: none;
+    }
+  
+    .content {
+      margin: 0;
+      width: 100%;
+      padding: 1rem;
+    }
+  }
+  
